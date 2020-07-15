@@ -1,11 +1,13 @@
-sudo: required
-
 services:
   - docker
 
-language: minimal
+os: linux
 
-matrix:
+dist: xenial
+
+language: shell
+
+jobs:
   include:
   - name: "Exercise 1"
     env:
